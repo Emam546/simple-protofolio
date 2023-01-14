@@ -134,7 +134,8 @@ header .links:hover ul {
 }
 
 main>div {
-    padding-top: 120px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .landing {
@@ -169,7 +170,6 @@ main>div {
 
 .features {
     width: 100%;
-    background-color: #f6f6f6;
     padding-left:var(--section-pad);
     padding-right:var(--section-pad);
 }
