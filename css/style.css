@@ -35,11 +35,6 @@ header {
     .container {
         width: 750px;
     }
-
-    :root {
-        --section-pad: 3px;
-
-    }
 }
 
 @media (min-width:992px) {
