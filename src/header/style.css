@@ -1,0 +1,79 @@
+/* Start Header */
+header {
+    background-color: #eee;
+    width: 100%;
+    padding: 0 70px;
+    height: 60px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo {
+    height: 100%;
+}
+
+.links {
+    position: relative;
+    margin-left: 65%;
+}
+
+.links ul::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+}
+
+.flip-bar {
+    transform: rotateX(180deg) rotateZ(180deg);
+    font-size: 60px !important;
+    direction: rtl !important;
+    cursor: pointer;
+    user-select:none;
+}
+
+
+
+header .links ul {
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 15px);
+    padding: 0px;
+    margin: 0px;
+    min-width: 200px;
+    list-style-position: inside;
+    background-color: #f6f6f6;
+    z-index: 1;
+}
+
+header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+header .links ul li a:hover {
+    padding-left: 23px;
+}
+
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid black;
+}
+
+
+/* header .links:hover ul {
+    display: block;
+} */
+/* End Header */
